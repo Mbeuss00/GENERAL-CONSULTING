@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Beating loader effect</title>
+
+	<style>
+		.container {
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			width: 100vw;
+		}
+
+		.beating {
+			position: absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 9999;
+			animation: beating 1.5s infinite;
+			text-transform: center;
+		}
+
+		@keyframes beating {
+			0% {transform: scale(1);}
+
+			50% {transform: scale(1.2);}
+
+			100% {transform: scale(1);}
+		}
+
+		.beating img {
+			width: 110px;
+			height: auto;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="beat" class="container">
+		<div class="beating">
+			<img src="loading.png" alt="Loading...">
+		</div>
+	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function(){
+			var loader = document.getElementById("beat");
+			//loader.style.display = 'none';
+		});
+	</script>
+	<div>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dignissimos debitis perferendis sapiente, sed, molestias similique. Iusto quidem quis architecto voluptates laborum repudiandae tempore accusantium. Vero odio eaque rerum deserunt.
+	</div>
+	<div class="products">
+			<div class="produit">
+				<h4>Nos produits</h4>
+				<span>
+					<p>Chicken</p>
+					<p>Eoeufs</p>
+					<p>Huile</p>
+				</span>
+				<div class="imageProd1" style="display: flex;">
+						<div class="ligne1">
+							<div class="entete1">
+								<img src="imageProd01.jpg" alt="#" style="width: 100%; height: 347px; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+								<h4>Poitrine De Poulets</h4>
+							</div>
+							<div class="textimg1">
+								<p>Nos poitrines de poulets sont en bonne santé...</p>
+                        		<p class="pds2">Poids Net: 240gr</p>
+                        		<div class="prix1">
+                        			<p>&euro; 17.5</p>
+                        			<button>ADD TO CART</button>
+                        		</div>
+							</div>
+						</div>
+
+					<!-- Fin imageProd1 -->
+
+
+						<div class="ligne1 image2">
+							<div class="entete1">
+								<img src="imageProd02.jpg" alt="#" style="width: 347px; height: 347px; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+								<h4>Poitrine De Poulets</h4>
+							</div>
+							<div class="textimg1">
+								<p>Nos poitrines de poulets sont en bonne santé...</p>
+                        		<p class="pds2">Poids Net: 240gr</p>
+                        		<div class="prix1">
+                        			<p>&euro; 17.5</p>
+                        			<button>ADD TO CART</button>
+                        		</div>
+							</div>
+						</div>
+
+					<!-- Fin imageProd2 -->
+
+
+						<div class="ligne1 image3">
+							<div class="entete1">
+								<img src="imageProd03.jpg" alt="#" style="width: 347px; height: 347px; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+								<h4>Poitrine De Poulets</h4>
+							</div>
+							<div class="textimg1">
+								<p>Nos poitrines de poulets sont en bonne santé...</p>
+                        		<p class="pds2">Poids Net: 240gr</p>
+                        		<div class="prix1">
+                        			<p>&euro; 17.5</p>
+                        			<button>ADD TO CART</button>
+                        		</div>
+							</div>
+						</div>
+
+					<!-- Fin imageProd3 -->
+
+
+				</div>
+
+				<!-- Fin image Produit1 -->
+
+
+				<div class="imageProd2" style="display: flex;">
+						<div class="ligne1">
+							<div class="entete1">
+								<img src="imageProd04.jpg" alt="#" style="width: 347px; height: 347px; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+								<h4>Poitrine De Poulets</h4>
+							</div>
+							<div class="textimg1">
+								<p>Nos poitrines de poulets sont en bonne santé...</p>
+                        		<p class="pds2">Poids Net: 240gr</p>
+                        		<div class="prix1">
+                        			<p>&euro; 17.5</p>
+                        			<button>ADD TO CART</button>
+                        		</div>
+							</div>
+						</div>
+
+					<!-- Fin imageProd4 -->
+
+
+						<div class="ligne1 image2">
+							<div class="entete1">
+								<img src="imageProd05.jpg" alt="#" style="width: 347px; height: 347px; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+								<h4>Poitrine De Poulets</h4>
+							</div>
+							<div class="textimg1">
+								<p>Nos poitrines de poulets sont en bonne santé...</p>
+                        		<p class="pds2">Poids Net: 240gr</p>
+                        		<div class="prix1">
+                        			<p>&euro; 17.5</p>
+                        			<button>ADD TO CART</button>
+                        		</div>
+							</div>
+						</div>
+
+					<!-- Fin imageProd5 -->
+
+
+						<div class="ligne1 image3">
+							<div class="entete1">
+								<img src="imageProd06.jpg" alt="#" style="width: 347px; height: 347px; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+								<h4>Poitrine De Poulets</h4>
+							</div>
+							<div class="textimg1">
+								<p>Nos poitrines de poulets sont en bonne santé...</p>
+                        		<p class="pds2">Poids Net: 240gr</p>
+                        		<div class="prix1">
+                        			<p>&euro; 17.5</p>
+                        			<button>ADD TO CART</button>
+                        		</div>
+							</div>
+						</div>
+
+					<!-- Fin imageProd6 -->
+
+
+				</div>
+
+				<!-- Fin Image Produit2 -->
+
+
+				<div class="imageProd3" style="display: flex;">
+						<div class="ligne1">
+							<div class="entete1">
+								<img src="imageProd07.jpg" alt="#" style="width: 347px; height: 347px; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+								<h4>Poitrine De Poulets</h4>
+							</div>
+							<div class="textimg1">
+								<p>Nos poitrines de poulets sont en bonne santé...</p>
+                        		<p class="pds2">Poids Net: 240gr</p>
+                        		<div class="prix1">
+                        			<p>&euro; 17.5</p>
+                        			<button>ADD TO CART</button>
+                        		</div>
+							</div>
+						</div>
+
+					<!-- Fin imageProd7 -->
+
+
+						<div class="ligne1 image2">
+							<div class="entete1">
+								<img src="imageProd08.jpg" alt="#" style="width: 347px; height: 347px; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+								<h4>Poitrine De Poulets</h4>
+							</div>
+							<div class="textimg1">
+								<p>Nos poitrines de poulets sont en bonne santé...</p>
+                        		<p class="pds2">Poids Net: 240gr</p>
+                        		<div class="prix1">
+                        			<p>&euro; 17.5</p>
+                        			<button>ADD TO CART</button>
+                        		</div>
+							</div>
+						</div>
+
+					<!-- Fin imageProd8 -->
+
+
+				</div>
+
+
+			</div>
+
+			<!-- Fin Produit -->
+
+
+			<!--<style>
+				.loader {
+					position: fixed;
+					top: 50%;
+					left: 45%;
+					z-index: 9999;
+					text-align: center;
+				}
+
+				.fa-spinner {
+					width: 50px;
+					height: 50px;
+					animation: spin 2s linear infinite;
+					transform: translate(-50%, -50%);
+				}
+
+				@keyframes spin {
+					0%{ width: 50%; height: 50%; }
+					100%{ width: 70%; height: 70%; }					
+				}
+			</style>
+
+	
+			<section>
+				<div id="loader" class="loader">
+					<img class="fa-spinner" src="loading.png" alt="loading">
+					<p>Chargement en cours...</p>
+				</div>
+
+				<script>
+					document.addEventListener("DOMContentLoaded", function(){
+
+						//var loader = document.getElementById("loader");
+						//loader.style.display = "none";
+					});
+				</script>-->
+			</section>
+
+
+			<div class="boxContain">
+				<div class="boxContenu">
+					<p>Bon</p>
+				</div>
+			</div>
+
+			<div class="sources">
+				<h1>Source de nos produits</h1>
+			</div>
+
+
+		</div>
+
+
+		
+	</section>
+</body>
+</html>
